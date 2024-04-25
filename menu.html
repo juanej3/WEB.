@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Frames - Ciber y Papelería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: calc(100vh - 60px);
+        }
+        nav {
+            background-color: #cccccc;
+            color: #fff;
+            width: 20%;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 80%;
+            border: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Ciber y Papelería</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                 
+                <li class="menu-item"><a href="consejos.html" target="infoFrame">Consejos de Compra</a></li>
+                <li class="menu-item"><a href="productos.html" target="infoFrame">Productos</a></li>
+                <li class="menu-item"><a href="formulario_contacto.html" target="infoFrame">Contacto</a></li>
+                <li class="menu-item"><a href="redes.html" target="infoFrame">Redes Sociales</a></li>
+            </ul>
+        </nav>
+        <iframe name="infoFrame" src="consejos.html"></iframe>
+    </div>
+
+    <footer>
+        <p>©  - CIBERLIMAJO</p>
+    </footer>
+</body>
+</html>

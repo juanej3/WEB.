@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CIBERLIMAJO</title>
+
+<style>
+ 
+ body 
+{
+    font-family: Agency FB, sans-serif;
+    background-color: #ccffcc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+ 
+ #container {
+    text-align: center;
+    padding: 20px;
+    background-color: #669999;
+ 
+   border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+ 
+ h1 {
+    color: #3;
+  }
+
+ 
+ p 
+{
+   
+ color:#black;
+
+  }
+
+</style>
+
+</head>
+
+<body> 
+
+<div id="container">
+  
+<h1>Bienvenido al Ciber y Papeler&iacutea</h1>
+ 
+ <p>Por favor, ingresa tu nombre.</p>
+ 
+ <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+  
+<button onclick="mostrarMensaje()">Ingresar</button>
+
+</div>
+
+
+<script>
+  
+function mostrarMensaje() {
+   
+ var nombre = document.getElementById('nombre').value;
+   
+ if (nombre.trim() === '') 
+{
+   
+alert('Por favor, ingresa tu nombre.');
+  
+  } 
+else {
+     
+ alert('Bienvenido, ' + nombre + '! Gracias por visitar CIBERLIMAJO.');
+     
+ window.location.href = 'menu.html';  
+ }
+ 
+ }
+
+</script>
+
+</body>
+
+</html>
